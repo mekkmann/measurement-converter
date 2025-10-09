@@ -1,7 +1,7 @@
 # Measurement Converter
 Easily convert different measurements without the bloat!
 
-This is an app developed to help myself when cooking, I hate when I have found a sweet recipe on Google and all of a sudden I need to convert cups to deciliters and I need to google the conversion and BAM, I just lost the recipe and now I have to google it again!
+This is an app that I developed to help myself when I'm cooking, I hate when I have found a sweet recipe on Google and all of a sudden I need to convert cups to deciliters and I need to google the conversion and BAM, I just lost the recipe and now I have to google it again! What a waste of time!
 
 Well, this solves that by having a *nice* converter readily available!
 
