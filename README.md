@@ -1,16 +1,19 @@
-# converter
+# Measurement Converter
+Easily convert different measurements without the bloat!
 
-Easily convert different measurements without the bloat
+This is an app developed to help myself when cooking, I hate when I have found a sweet recipe on Google and all of a sudden I need to convert cups to deciliters and I need to google the conversion and BAM, I just lost the recipe and now I have to google it again!
 
-## Getting Started
+Well, this solves that by having a *nice* converter readily available!
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+- Miles to kilometers
+- Cups to deciliters
+- Fahrenheit to Celsius
+  
+## Planned
+- Kilometers to miles
+- Deciliters to cups
+- Celsius to Fahrenheit
+- Automatic conversion types based on what is chosen to convert from
+- Any form of design
+- TBD
