@@ -1,3 +1,4 @@
+import 'package:converter/utils/conversion_utils.dart';
 import 'package:converter/utils/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -74,17 +75,17 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   void fahrenheitToCelsius(double toConvert) {
     setState(() {
-      _lastConversion = (toConvert - 32) / 1.8;
+      _lastConversion = ConversionUtils.fahrenheitToCelsius(toConvert);
     });
   }
   void milesToKilometers(double toConvert) {
     setState(() {
-      _lastConversion = toConvert * 1.609344;
+      _lastConversion = ConversionUtils.milesToKilometers(toConvert);
     });
   }
   void cupsToDeciliters(double toConvert) {
     setState(() {
-      _lastConversion = toConvert * 2.365882365;
+      _lastConversion = ConversionUtils.cupsToDeciliters(toConvert);
     });
   }
 
