@@ -11,7 +11,8 @@ class TAppTheme {
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Color(0xFF27374D),
+      titleTextStyle: TextStyle().copyWith(color: Colors.white, fontSize: 18),
     ),
     textTheme: TTextTheme.lightTextTheme,
   );
