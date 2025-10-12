@@ -77,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
     tryConversion();
   }
   void tryConversion(){
+    // TODO: Fix [Unhandled Exception: FormatException: Invalid double]
     if(_selectedFrom == 'Fahrenheit' && _selectedTo == 'Celsius') fahrenheitToCelsius(double.parse(_textEditingController.text));
 
     if(_selectedFrom == 'Miles' && _selectedTo == 'Kilometers') milesToKilometers(double.parse(_textEditingController.text));
@@ -191,9 +192,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      '${_textEditingController.text} $_selectedFrom = ${_lastConversion.toStringAsFixed(2)} $_selectedTo',
-                      style: TextStyle(fontSize: 24),
+                    child: Card(
+                      child: ListTile(
+                        title: Text(
+                          '${_textEditingController.text.isNotEmpty ? _textEditingController.text.isNotEmpty : '0'} $_selectedFrom = ',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                        subtitle: Text(
+                          '${_lastConversion.toStringAsFixed(2)} $_selectedTo',
+                          style: TextStyle(fontSize: 24),
+                        ),
+                      ),
                     ),
                   ),
                 ],
