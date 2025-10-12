@@ -195,7 +195,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Card(
                       child: ListTile(
                         title: Text(
-                          '${_textEditingController.text.isNotEmpty ? _textEditingController.text.isNotEmpty : '0'} $_selectedFrom = ',
+                          '${_textEditingController.text.isNotEmpty ? _textEditingController.text : '0'} $_selectedFrom = ',
                           style: TextStyle(fontSize: 18),
                         ),
                         subtitle: Text(
