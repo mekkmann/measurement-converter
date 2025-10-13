@@ -8,8 +8,7 @@ class TAppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: Color(0xFFDDE6ED),
     appBarTheme: AppBarTheme(
       backgroundColor: Color(0xFF27374D),
       titleTextStyle: TextStyle().copyWith(color: Colors.white, fontSize: 18),
@@ -21,10 +20,10 @@ class TAppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.blueGrey,
+    scaffoldBackgroundColor: Color(0xFFDDE6ED),
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFF27374D),
+      titleTextStyle: TextStyle().copyWith(color: Colors.white, fontSize: 18),
     ),
     textTheme: TTextTheme.darkTextTheme,
   );
