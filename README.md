@@ -9,11 +9,12 @@ Well, this solves that by having a *nice* converter readily available!
 - Miles to kilometers
 - Cups to deciliters
 - Fahrenheit to Celsius
+- Not a complete eye sore (I have a bit of trouble seeing colors correctly, be nice, okis?)
   
 ## Planned
 - Kilometers to miles
 - Deciliters to cups
 - Celsius to Fahrenheit
 - Automatic conversion types based on what is chosen to convert from
-- Any form of design
+- Less of an eye sore
 - TBD
