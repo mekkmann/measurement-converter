@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<String> _euMeasurements = ['Celsius', 'Deciliters', 'Kilometers'];
 
   String? _selectedFrom = 'Fahrenheit';
-  String? _selectedTo = 'Deciliters';
+  String? _selectedTo = 'Celsius';
 
   double _lastConversion = 0;
 
