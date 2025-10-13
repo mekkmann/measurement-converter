@@ -65,10 +65,28 @@ class _MyHomePageState extends State<MyHomePage> {
   double _lastConversion = 0;
 
 
+
+
   void _selectedConversionType(bool isFrom, String selectedValue) {
     setState(() {
       if(isFrom) {
         _selectedFrom = selectedValue;
+
+        // TODO: Find better way to automatically select which values CAN be chosen based on a chosen type
+        // example: cups should be able to convert into deciliters, liters, etc.
+        // How it works right now: Cups automatically wants to convert to
+        // Deciliters only, tho it should choose deciliters as the base,
+        // the _selectedTo dropdown should only contain a list of valid
+        // conversion possibilities
+        switch (selectedValue){
+          case 'Fahrenheit':
+            _selectedTo = 'Celsius';
+          case 'Cups':
+            _selectedTo = 'Deciliters';
+          case 'Miles':
+            _selectedTo = 'Kilometers';
+        }
+
       } else {
         _selectedTo = selectedValue;
       }
