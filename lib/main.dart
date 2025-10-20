@@ -1,5 +1,6 @@
 import 'package:converter/utils/conversion_utils.dart';
 import 'package:converter/utils/theme.dart';
+import 'package:converter/widgets/result_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -59,8 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<String> _usMeasurements = ['Fahrenheit', 'Cups', 'Miles'];
   final List<String> _euMeasurements = ['Celsius', 'Deciliters', 'Kilometers'];
 
-  String? _selectedFrom = 'Fahrenheit';
-  String? _selectedTo = 'Celsius';
+  String _selectedFrom = 'Fahrenheit';
+  String _selectedTo = 'Celsius';
 
   double _lastConversion = 0;
 
@@ -210,17 +211,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: Card(
-                      child: ListTile(
-                        title: Text(
-                          '${_textEditingController.text.isNotEmpty ? _textEditingController.text : '0'} $_selectedFrom = ',
-                          style: TextStyle(fontSize: 18),
-                        ),
-                        subtitle: Text(
-                          '${_lastConversion.toStringAsFixed(2)} $_selectedTo',
-                          style: TextStyle(fontSize: 24),
-                        ),
-                      ),
+                    child: ResultCard(
+                        inputValue: _textEditingController.text.isNotEmpty ? double.parse(_textEditingController.text) : 0,
+                        fromUnit: _selectedFrom,
+                        toUnit: _selectedTo,
+                        result: _lastConversion,
                     ),
                   ),
                 ],
