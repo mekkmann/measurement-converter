@@ -200,9 +200,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: TextField(
                       controller: _textEditingController,
                       decoration: InputDecoration(
-                        border: UnderlineInputBorder(),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
                         labelText: 'Enter value to convert',
-                        floatingLabelAlignment: FloatingLabelAlignment.center
+                        floatingLabelAlignment: FloatingLabelAlignment.center,
+                        labelStyle: TextStyle(color: Colors.black),
                       ),
                       keyboardType: TextInputType.number,
                     ),
